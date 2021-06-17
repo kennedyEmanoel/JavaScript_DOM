@@ -11,8 +11,11 @@
 
         return botaoDelete
     }
-    function deleteTarefa(){
-        console.log('apenas')
+    function deleteTarefa(evento){
+        const botaoDeleteClicado = evento.target
+        const itemDaLista = botaoDeleteClicado.parentElement
+        
+        itemDaLista.remove()
     }
 
     function criarTarefa(event) {
