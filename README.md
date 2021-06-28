@@ -4,11 +4,7 @@ Projeto didático para Javascript(DOM) para turma de desenvolvimento de sistemas
 # Instalação
 
 1.Necessário ter o GIT instalado.
-
 `https://git-scm.com`
-
 2. Clone o repositório.
-3. 
-4. `https://github.com/kennedyEmanoel/JavaScript_DOM.git`
-5. 
+`https://github.com/kennedyEmanoel/JavaScript_DOM.git`
 6. Abra o arquivo `index.html`
