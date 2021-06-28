@@ -3,7 +3,7 @@ Projeto didático para Javascript(DOM) para turma de desenvolvimento de sistemas
 
 # Instalação
 
-1.Necessário ter o GIT instalado.
+1.Necessário ter o GIT.
 
 ``https://git-scm.com``
 
