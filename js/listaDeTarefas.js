@@ -6,24 +6,25 @@
         const botaoDelete = document.createElement('span')
         botaoDelete.innerText = "x"
         botaoDelete.classList = "close"
-        botaoDelete.addEventListener('click', deletarTarefa)
 
+        botaoDelete.addEventListener('click', deletarTarefa)
+        
         return botaoDelete
     }
-
+    
     function criarBotaoConcluir(){
         const botaoConcluir = document.createElement('input')
         botaoConcluir.setAttribute('type', 'checkbox')
         botaoConcluir.classList = 'form-check-input'
+
         botaoConcluir.addEventListener('click', concluirTarefa)
 
         return botaoConcluir
     }
-
+    
     function deletarTarefa(evento){
         const botaoDeleteClicado = evento.target
         const itemDaLista = botaoDeleteClicado.parentElement
-
         itemDaLista.remove()
     }
 
@@ -31,12 +32,10 @@
         console.log("chamei a função concluir Tarefa")
         const botaoConcluirClicado = evento.target
         const itemDaListaConcluido = botaoConcluirClicado.parentElement
-
         itemDaListaConcluido.classList.toggle('tarefa_concluida')
     }
 
     function criarTarefa(evento){
-
         evento.preventDefault()
 
         const valorTarefa = inputTarefa.value
@@ -53,7 +52,11 @@
         novoItem.appendChild(criarBotaoDelete())
         
         listaDeTarefas.appendChild(novoItem)
+
         inputTarefa.value = ""
+
     }
+
+
     novaTarefa.addEventListener('click', criarTarefa)
 })()
